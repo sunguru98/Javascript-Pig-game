@@ -11,6 +11,8 @@
     
     <body>
         <div class="wrapper clearfix">
+            <h1 class="thresh-display">Current Threshold Value :</h1>
+            <span class="thresh-score">34</span>
             <div class="player-0-panel active">
                 <div class="player-name" id="name-0">Player 1</div>
                 <div class="player-score" id="score-0">43</div>
@@ -29,11 +31,14 @@
                 </div>
             </div>
             
+            <input onfocus="this.placeholder = ''" class="input-value" type="number" name="setMaxValue" onblur="this.placeholder='Enter threshold value'">
+            <button class="btn-set-value"><i class="ion-ios-checkmark"></i>Set value</button>
             <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
             <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
             <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
             
-            <img src="die5.png" alt="Dice" class="dice">
+            <img src="die5.png" alt="Dice" class="dice die1">
+            <img src="die5.png" alt="Dice" class="dice die2">
         </div>
         
         <script src="app.js"></script>
